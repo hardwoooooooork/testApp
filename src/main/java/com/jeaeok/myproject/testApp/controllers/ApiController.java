@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jeaeok.myproject.testApp.models.Keyword;
-import com.jeaeok.myproject.testApp.models.User;
+import com.jeaeok.myproject.testApp.domain.HotKeyWord;
+import com.jeaeok.myproject.testApp.domain.Keyword;
+import com.jeaeok.myproject.testApp.domain.User;
 import com.jeaeok.myproject.testApp.services.ApiService;
 import com.jeaeok.myproject.testApp.services.UserService;
 
@@ -24,10 +25,7 @@ public class ApiController {
 	private ApiService apiService;
 	
 	
-	@PostMapping(path="/user/join", produces = "application/json")
-	public User addUser(User user){
-		return userService.addUser(user);
-	}
+	
 	
 	/**
 	 * 로그인정보 확인 컨트롤러
@@ -51,5 +49,15 @@ public class ApiController {
 	@GetMapping(path = "/user/info/keyword" , produces = "application/json")
 	public List<Keyword> getMySearchList(){
 		return userService.getMySearchList();
+	}
+	
+	@GetMapping(path = "/hotkeyword" , produces = "application/json")
+	public List<HotKeyWord> getHotKeywordList(){
+		return apiService.getHotKeywordList();
+	}
+	
+	@PostMapping(path="/user/join", produces = "application/json")
+	public User addUser(User user){
+		return userService.addUser(user);
 	}
 }

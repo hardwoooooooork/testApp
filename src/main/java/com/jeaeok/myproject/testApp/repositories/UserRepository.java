@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.jeaeok.myproject.testApp.models.User;
+import com.jeaeok.myproject.testApp.domain.User;
 
 
 public interface UserRepository extends CrudRepository<User, Long> {

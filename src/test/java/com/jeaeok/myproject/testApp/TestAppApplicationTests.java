@@ -21,7 +21,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.jeaeok.myproject.testApp.models.User;
+import com.jeaeok.myproject.testApp.domain.User;
 import com.jeaeok.myproject.testApp.repositories.UserRepository;
 
 @RunWith(SpringRunner.class)

@@ -1,4 +1,4 @@
-package com.jeaeok.myproject.testApp.models;
+package com.jeaeok.myproject.testApp.domain;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;

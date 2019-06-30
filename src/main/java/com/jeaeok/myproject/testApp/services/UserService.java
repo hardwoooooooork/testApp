@@ -7,8 +7,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.jeaeok.myproject.testApp.configs.AuthenticationFacade;
-import com.jeaeok.myproject.testApp.models.Keyword;
-import com.jeaeok.myproject.testApp.models.User;
+import com.jeaeok.myproject.testApp.domain.HotKeyWord;
+import com.jeaeok.myproject.testApp.domain.Keyword;
+import com.jeaeok.myproject.testApp.domain.User;
 import com.jeaeok.myproject.testApp.repositories.KeywordRepository;
 import com.jeaeok.myproject.testApp.repositories.UserRepository;
 
@@ -55,4 +56,5 @@ public class UserService {
 		user.setUserPassword( passwordEncoder.encode(user.getUserPassword()) );
 		return null;
 	}
+
 }

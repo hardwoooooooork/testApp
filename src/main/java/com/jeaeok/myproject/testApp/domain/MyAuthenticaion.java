@@ -1,4 +1,4 @@
-package com.jeaeok.myproject.testApp.models;
+package com.jeaeok.myproject.testApp.domain;
 
 import java.util.List;
 

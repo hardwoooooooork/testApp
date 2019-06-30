@@ -13,8 +13,8 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
-import com.jeaeok.myproject.testApp.models.MyAuthenticaion;
-import com.jeaeok.myproject.testApp.models.User;
+import com.jeaeok.myproject.testApp.domain.MyAuthenticaion;
+import com.jeaeok.myproject.testApp.domain.User;
 import com.jeaeok.myproject.testApp.services.UserService;
 
 @Component("authProvider")
