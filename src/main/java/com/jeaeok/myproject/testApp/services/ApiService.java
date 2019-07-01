@@ -143,4 +143,8 @@ public class ApiService {
 		return result;
 	}
 
+	public String getApiKey() {
+		return API_KEY;
+	}
+
 }

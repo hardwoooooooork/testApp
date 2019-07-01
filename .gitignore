@@ -45,6 +45,9 @@ local.properties
 .loadpath
 .recommenders
 
+# node js
+node_modules
+
 # External tool builders
 .externalToolBuilders/
 

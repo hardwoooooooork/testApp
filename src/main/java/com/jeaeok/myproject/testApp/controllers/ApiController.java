@@ -24,7 +24,14 @@ public class ApiController {
 	@Autowired
 	private ApiService apiService;
 	
-	
+	/**
+	 * api Key 가져오기
+	 * @return
+	 */
+	@GetMapping(path="/apiKey", produces = "application/json")
+	public String getapiKey(){
+		return apiService.getApiKey();
+	}
 	
 	
 	/**
