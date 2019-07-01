@@ -8,4 +8,4 @@ spring:
       
 kakao:
   local_api_url: https://dapi.kakao.com/v2/local/search/keyword.json
-  api_key: 6b1ecc39e82e178687758a58874a66cf
+  api_key: 
