@@ -1,0 +1,34 @@
+/* Maps.css */
+#Maps{
+ padding: 2em 2em;
+ height: 100%;
+}
+#Maps .title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+#Maps .container{
+    height: 100%;
+}
+#Maps .container .map-find-area{
+}
+#Maps .container .map-view-area{
+}
+#Maps .container .map-find-menu{
+    margin: 0px !important;
+    width: 100%;
+}
+#Maps .container .map-find-menu .find-input{}
+#Maps .container .map-find-menu .find-result-area{
+    height: 730px;
+}
+#Maps .container .map-find-menu .find-padding{
+    text-align: center;
+}
+#Maps .container .hot-keyword-area{
+    position: absolute;
+    z-index: 1000;
+    top: 80px;
+    right: 0px;
+}
