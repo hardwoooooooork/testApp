@@ -1,5 +1,7 @@
 package com.jeaeok.myproject.testApp.configs;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -17,6 +19,7 @@ import com.jeaeok.myproject.testApp.repositories.UserRepository;
  *
  */
 public class AppConfig {
+	private static final Logger log = LoggerFactory.getLogger(AppConfig.class);
 	
 	@Autowired
 	private PasswordEncoder passwordEncoder;
@@ -37,6 +40,7 @@ public class AppConfig {
 	 */
 	public CommandLineRunner commandLineRunner(UserRepository userRepository) {
 		return args -> {
+			log.info("Create Test Id : {} pw : {}" , "test1", "1234");
 			 userRepository.save(new User("test1","테스트1",passwordEncoder.encode("1234")));
 		};
 	}

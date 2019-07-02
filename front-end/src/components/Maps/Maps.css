@@ -32,3 +32,16 @@
     top: 80px;
     right: 0px;
 }
+#Maps .container .map-find-menu .find-padding .pagination-input{
+width: calc(100% - 77px);
+}
+#Maps .container .map-find-menu .find-padding .btn-pre {
+
+}
+#Maps .container .map-find-menu .find-padding .btn-next {
+
+}
+#overlay-area{
+    background-color: #fff;
+    border: 1px solid #000;
+}

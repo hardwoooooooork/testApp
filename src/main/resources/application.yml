@@ -5,7 +5,14 @@ spring:
   h2:
     console:
       enabled: true
-      
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/static/
+    add-mappings: true
+
+
+
 kakao:
   local_api_url: https://dapi.kakao.com/v2/local/search/keyword.json
-  api_key: 
+  api_key: <KAKAO API>

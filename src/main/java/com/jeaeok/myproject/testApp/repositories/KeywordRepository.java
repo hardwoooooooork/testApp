@@ -9,5 +9,5 @@ import com.jeaeok.myproject.testApp.domain.User;
 
 
 public interface KeywordRepository extends CrudRepository<Keyword, Long> {
-	List<Keyword> findByUser(User user);
+	List<Keyword> findByUserOrderByCreatedTimeAsc(User user);
 }

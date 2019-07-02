@@ -49,12 +49,12 @@ public class UserService {
 
 	public List<Keyword> getMySearchList() {
 		User user = userInfo();		
-		return keywordRepository.findByUser(user);
+		return keywordRepository.findByUserOrderByCreatedTimeAsc(user);
 	}
 
 	public User addUser(User user) {
 		user.setUserPassword( passwordEncoder.encode(user.getUserPassword()) );
-		return null;
+		return userRepository.save(user);
 	}
 
 }

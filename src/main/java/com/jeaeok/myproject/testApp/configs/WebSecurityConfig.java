@@ -31,19 +31,22 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .logoutUrl("/api/logout")
         .and()
         .csrf()
-        .ignoringAntMatchers("/h2-console/**")
+//        .ignoringAntMatchers("/h2-console/**")
         .disable()
         .authorizeRequests()
         .antMatchers(
         		"/",
-                "/h2-console/**",
-                "/api/v1/user/join"
+//                "/h2-console/**",
+                "/api/v1/user/join",
+                "/static/**"
         ).permitAll()
         .anyRequest().authenticated()
         .and()
         .headers().frameOptions().sameOrigin()
         .and()
-        .httpBasic();
+        .httpBasic()
+        .authenticationEntryPoint(new NoPopupBasicAuthenticationEntryPoint())
+        ;
 		
 		http.authenticationProvider(authProvider);
   	}

@@ -90,6 +90,16 @@
 			        </execution>
 			    </executions>
 			</plugin>
+			<!-- 배포시 front-end 예외처리 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>**/front-end/*</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
