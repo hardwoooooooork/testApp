@@ -49,7 +49,7 @@ public class UserService {
 
 	public List<Keyword> getMySearchList() {
 		User user = userInfo();		
-		return keywordRepository.findByUserOrderByCreatedTimeAsc(user);
+		return keywordRepository.findByUserOrderByCreatedTimeDesc(user);
 	}
 
 	public User addUser(User user) {

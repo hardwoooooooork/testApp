@@ -2,6 +2,7 @@ import React from 'react'
 import './History.css'
 import ReactTable from 'react-table'
 import 'react-table/react-table.css'
+import Pagination from "./Pagination";
 
 export default function HistoryLayout({ historyData, onChangeSearchHandler }) {
     const data = historyData;
@@ -36,6 +37,7 @@ export default function HistoryLayout({ historyData, onChangeSearchHandler }) {
     return (
         <div id="History">
             <ReactTable
+                PaginationComponent={Pagination}
                 minRows={5}
                 defaultPageSize={5}
                 data={data}
@@ -44,3 +46,7 @@ export default function HistoryLayout({ historyData, onChangeSearchHandler }) {
         </div>
     )
 }
+
+HistoryLayout.defaultProps = {
+    onChangeSearchHandler: () => console.warn("not define onChangeSearchHandler"),
+};

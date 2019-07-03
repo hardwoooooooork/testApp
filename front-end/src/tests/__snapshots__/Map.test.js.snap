@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Map /> matches snapshot 1`] = `
+<div>
+  <div>
+    <div
+      class="ui container"
+      id="Maps"
+    >
+      <div
+        class="title"
+      >
+        <h2
+          class="ui header"
+        >
+          Map List
+        </h2>
+        <button
+          class="ui button"
+        >
+          Logout
+        </button>
+      </div>
+      <div
+        class="ui grid container"
+      >
+        <div
+          class="four wide column map-find-area"
+        >
+          <div
+            class="ui vertical map-find-menu menu"
+          >
+            <div
+              class="item find-input"
+            >
+              <form>
+                <div
+                  class="ui icon input"
+                  placehold="Search ....."
+                >
+                  <input
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <i
+                    aria-hidden="true"
+                    class="search circular inverted link icon"
+                  />
+                </div>
+              </form>
+            </div>
+            <div
+              class="item find-result-area"
+            >
+              <div
+                class="ui list"
+                role="list"
+              >
+                <div
+                  class="item"
+                  role="listitem"
+                >
+                  no data
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="twelve wide column map-view-area"
+        >
+          <div>
+            Looooooooooooading....
+          </div>
+        </div>
+        <div
+          class="hot-keyword-area"
+        >
+          <div
+            class="ui vertical hot-keyword menu"
+            style="display: none;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

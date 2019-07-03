@@ -2,9 +2,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
-  h2:
-    console:
-      enabled: true
+  # h2:
+  #   console:
+  #     enabled: true
   mvc:
     static-path-pattern: /static/**
   resources:
@@ -15,4 +15,4 @@ spring:
 
 kakao:
   local_api_url: https://dapi.kakao.com/v2/local/search/keyword.json
-  api_key: <KAKAO API>
+  api_key: <KAKAO_API>

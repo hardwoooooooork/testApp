@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserJoin /> matches snapshot 1`] = `
+<div>
+  <span
+    style="color: blue; margin-right: 7px; cursor: pointer;"
+  >
+    Sign Up
+  </span>
+</div>
+`;

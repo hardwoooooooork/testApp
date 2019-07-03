@@ -67,7 +67,7 @@ export default class KakaoMap extends Component {
         // 커스텀 오버레이에 표시할 내용입니다     
         // HTML 문자열 또는 Dom Element 입니다 
         var content = `
-            <div id="overlay-area">
+            <div id="overlay-area" class="arrow_box">
                 <ul>
                     <li>${data.address_name}</li>
                     <li>${data.category_name}</li>

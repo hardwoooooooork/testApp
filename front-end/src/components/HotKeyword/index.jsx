@@ -41,6 +41,7 @@ export default class HotKeyword extends Component {
         return (
             <HotKeywordLayout
                 {...this.state}
+                onChangeSearchHandler={this.props.onChangeSearchHandler}
             />
         )
     }

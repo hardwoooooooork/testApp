@@ -15,13 +15,14 @@ export default class Maps extends Component {
         }
     }
     
-    onChangeSearchHandler = (e)=>{
+    onChangeSearchHandler = (e)=>{        
         this.setState({ searchData: e.target.value })        
     }
     
     onSubmitSearchHandler = (e)=>{
         this.setState({ page: 1 })
         this.getLocalKeyword().then(searchResult => this.setState({ searchResult }));
+        e.preventDefault();
     }
 
     setLatLng = ({ x , y , data })=>{
@@ -56,8 +57,9 @@ export default class Maps extends Component {
         if(page <= 1) return false;
         page = page - 1;
 
-        this.setState({page})
-        this.getLocalKeyword().then(searchResult => this.setState({ searchResult }));
+        this.setState({ page }, () => {
+            this.getLocalKeyword().then(searchResult => this.setState({ searchResult }));
+        })
     };
     onNextButtonClickHandler = (e)=>{
         let { page, searchResult } = this.state; 
@@ -69,9 +71,12 @@ export default class Maps extends Component {
         // let max_page = Math.abs(total_count / size) + 1;
         
         if (searchResult.meta.is_end ) return false;
+        
         page = page + 1;
-        this.setState({ page })
-        this.getLocalKeyword().then(searchResult => this.setState({ searchResult }));
+        this.setState({ page },()=>{ 
+            this.getLocalKeyword().then(searchResult => this.setState({ searchResult }));
+        })
+        
     };
 
 

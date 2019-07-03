@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<History /> matches snapshot 1`] = `
+<div>
+  <div
+    id="History"
+  >
+    <div
+      class="ReactTable"
+    >
+      <div
+        class="rt-table"
+        role="grid"
+      >
+        <div
+          class="rt-thead -header"
+          style="min-width: 0300px600pxpx;"
+        >
+          <div
+            class="rt-tr"
+            role="row"
+          >
+            <div
+              class="rt-th rt-resizable-header -cursor-pointer"
+              role="columnheader"
+              style="flex: 0 auto;"
+              tabindex="-1"
+            >
+              <div
+                class="rt-resizable-header-content"
+              >
+                Keyword
+              </div>
+              <div
+                class="rt-resizer"
+              />
+            </div>
+            <div
+              class="rt-th rt-resizable-header -cursor-pointer"
+              role="columnheader"
+              style="flex: 0 auto;"
+              tabindex="-1"
+            >
+              <div
+                class="rt-resizable-header-content"
+              >
+                Date
+              </div>
+              <div
+                class="rt-resizer"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="rt-tbody"
+          style="min-width: 0300px600pxpx;"
+        >
+          <div
+            class="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              class="rt-tr -padRow -odd"
+              role="row"
+            >
+              <div
+                class="rt-td"
+                role="gridcell"
+                style="flex: 0 auto;"
+              >
+                <span>
+                   
+                </span>
+              </div>
+              <div
+                class="rt-td"
+                role="gridcell"
+                style="flex: 0 auto;"
+              >
+                <span>
+                   
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              class="rt-tr -padRow -even"
+              role="row"
+            >
+              <div
+                class="rt-td"
+                role="gridcell"
+                style="flex: 0 auto;"
+              >
+                <span>
+                   
+                </span>
+              </div>
+              <div
+                class="rt-td"
+                role="gridcell"
+                style="flex: 0 auto;"
+              >
+                <span>
+                   
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              class="rt-tr -padRow -odd"
+              role="row"
+            >
+              <div
+                class="rt-td"
+                role="gridcell"
+                style="flex: 0 auto;"
+              >
+                <span>
+                   
+                </span>
+              </div>
+              <div
+                class="rt-td"
+                role="gridcell"
+                style="flex: 0 auto;"
+              >
+                <span>
+                   
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              class="rt-tr -padRow -even"
+              role="row"
+            >
+              <div
+                class="rt-td"
+                role="gridcell"
+                style="flex: 0 auto;"
+              >
+                <span>
+                   
+                </span>
+              </div>
+              <div
+                class="rt-td"
+                role="gridcell"
+                style="flex: 0 auto;"
+              >
+                <span>
+                   
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              class="rt-tr -padRow -odd"
+              role="row"
+            >
+              <div
+                class="rt-td"
+                role="gridcell"
+                style="flex: 0 auto;"
+              >
+                <span>
+                   
+                </span>
+              </div>
+              <div
+                class="rt-td"
+                role="gridcell"
+                style="flex: 0 auto;"
+              >
+                <span>
+                   
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="pagination-bottom"
+      >
+        <div
+          class="Table__pagination"
+        >
+          <div
+            class="Table__prevPageWrapper"
+          >
+            <button
+              class="Table__pageButton"
+              disabled=""
+            >
+              Previous
+            </button>
+          </div>
+          <div
+            class="Table__visiblePagesWrapper"
+          />
+          <div
+            class="Table__nextPageWrapper"
+          >
+            <button
+              class="Table__pageButton"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="rt-noData"
+      >
+        No rows found
+      </div>
+      <div
+        class="-loading"
+      >
+        <div
+          class="-loading-inner"
+        >
+          Loading...
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

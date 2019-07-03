@@ -35,13 +35,45 @@
 #Maps .container .map-find-menu .find-padding .pagination-input{
 width: calc(100% - 77px);
 }
-#Maps .container .map-find-menu .find-padding .btn-pre {
+#Maps > div.ui.grid.container > div.four.wide.column.map-find-area > div > div.item.find-result-area {
+	cursor: pointer;
+}
+/* #Maps .container .map-find-menu .find-padding .btn-pre {
 
 }
 #Maps .container .map-find-menu .find-padding .btn-next {
 
-}
+} */
 #overlay-area{
     background-color: #fff;
     border: 1px solid #000;
+}
+
+.arrow_box {
+	position: relative;
+	background: #ffffff;
+	border: 2px solid #000000;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #ffffff;
+	border-width: 50px;
+	margin-left: -50px;
+}
+.arrow_box:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-top-color: #000000;
+	border-width: 53px;
+	margin-left: -53px;
 }

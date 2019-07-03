@@ -127,7 +127,7 @@ public class ApiService {
 	public List<HotKeyWord> getHotKeywordList() {
 		List<HotKeyWord> result = new ArrayList<>();
 		Query nativeQuery  = entityManager
-			.createNativeQuery("SELECT QUERY , COUNT(QUERY) AS COUNT FROM KEYWORD  group by QUERY ORDER BY COUNT DESC LIMIT 10");
+			.createNativeQuery("SELECT QUERY , COUNT(QUERY) AS COUNT FROM KEYWORD WHERE PAGE = 1 group by QUERY ORDER BY COUNT DESC LIMIT 10");
 		 List<Object[]> results = nativeQuery.getResultList();
 		
 		HotKeyWord tmpKeyWord;

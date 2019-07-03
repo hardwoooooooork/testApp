@@ -11,7 +11,9 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-table": "^6.10.0",
-    "scriptjs": "^2.5.9"
+    "scriptjs": "^2.5.9",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.87.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,6 +37,8 @@
     ]
   },
   "devDependencies": {
-    "http-proxy-middleware": "^0.19.1"
+    "@testing-library/react": "^8.0.4",
+    "http-proxy-middleware": "^0.19.1",
+    "jest-dom": "^3.5.0"
   }
 }
